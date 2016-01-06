@@ -4,6 +4,12 @@
   composer = "Nobuo Uematsu"
 }
 
+global = {
+  \time 3/4
+  \key c \major
+  \tempo "legato"
+}
+
 \include "deutsch.ly"
 
 \version "2.18.2"
