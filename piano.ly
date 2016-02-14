@@ -1,11 +1,11 @@
-pianoupper = \relative c'' {
- \global
+pianoupper_intro = \relative c'' {
 
-  % intro
   e'8 e, g h e <d fis> | <c e g>2. |  d8 d, fis a d <c e> | <h d fis>2. |
   h4 h h | h a4. d8 | fis,2. | h2. |  e4 e e | e d4. g8 | c,2.~ | c2. \break
+}
 
-  % main melody
+pianoupper_melody = \relative c'' {
+
   <<g,4. e'4.>> h8 e fis | <<{g4 fis e} \\ h2.>> | <<fis4. d'>> <g, e'>8 <<a4 c d>> |
   <<g,2. h2.>> |
   <<g4. e'4.>> h8 e fis | <<{g4 fis g} \\ h,2.>> | <<a4. fis' a>> <<g,8 e' g>> <<a4 fis a>> |
@@ -14,18 +14,20 @@ pianoupper = \relative c'' {
   <<g,2 h2>> <<e,8 g>> <<fis a>> |
   <<d,4 e g h>> <<e, g h>> <<e, g h>> | <<{fis2.} \\ {h4 a d}>> |
   <<c,4. e4. g4.>> g8 fis d | e g, c e g c | e e, g c e g \break
+}
 
-  % float...
+pianoupper_float = \relative c'' {
+
   a2 e'4 | <<{<<f,2 a2>>} \\ {e'4 d}>> <<f, c'>> | <<g2 h2>> g'4 |
   <h, e g>2.\arpeggio | <fis h>2 fis'4 | <a, cis fis>2.\arpeggio | <e a>2 e'4 |
   << {<fis, h>2.\arpeggio} \\ {e'4 (dis2)}>>  \break
+}
 
-  % final
+pianoupper_final = \relative c'' {
+
   <h,, fis' h>2 <h' d fis>4 | <a h d fis>4 <g h e> <fis h d> | <e a cis>2 <h' e a>4 | <a cis fis a>2. |
   << {<gis cis>2.} \\ {gis'4 e cis} >> | <d, h'>2 <h' fis'>4 | a4. fis8 <e a>4 |
   <h fis' h>2.~| h'2. \bar "|."
-
-
 }
 
 pianolower = \relative c'' {
