@@ -10,5 +10,7 @@
     \new Staff = "lower" \pianolower
  >>
   \layout {}
-  \midi {}
+  \midi {
+      \scoreTempo
+    }
 }

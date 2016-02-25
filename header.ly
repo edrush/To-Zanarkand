@@ -7,8 +7,9 @@
 global = {
   \time 3/4
   \key e \minor
-  \tempo "legato"
 }
+
+scoreTempo = \tempo 4 = 96 % BPM
 
 \include "deutsch.ly"
 

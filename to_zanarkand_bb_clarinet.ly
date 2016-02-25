@@ -10,5 +10,7 @@
                  \global \transpose c d, {\pianoupper_intro} \transpose c d' {\pianoupper_melody} \transpose c d {\pianoupper_float} \transpose c d' {\pianoupper_final}
              }
   \layout {}
-  \midi {}
+  \midi {
+      \scoreTempo
+    }
 }

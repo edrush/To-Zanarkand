@@ -1,10 +1,17 @@
 \include "header.ly"
 \include "piano.ly"
 \include "bass.ly"
+\include "harmonies.ly"
 
 \score {
   \new StaffGroup <<
     \new PianoStaff <<
+        \new ChordNames {
+                \set chordChanges = ##t
+                %\set chordNameLowercaseMinor = ##t
+                \chordmode { \set additionalPitchPrefix = #"add" \powerChords \harmonies }
+
+             }
         \set PianoStaff.instrumentName = #"Piano  "
         \new Staff \relative c'' {
                            \global \pianoupper_intro \transpose c c' {\pianoupper_melody \pianoupper_float \pianoupper_final}
@@ -19,5 +26,7 @@
     } \bass
   >>
   \layout {}
-  \midi {}
+  \midi {
+    \scoreTempo
+  }
 }

@@ -1,5 +1,6 @@
 pianoupper_intro = \relative c'' {
 
+  \scoreTempo
   e'8 e, g h e <d fis> | <c e g>2. |  d8 d, fis a d <c e> | <h d fis>2. |
   h4 h h | h a4. d8 | fis,2. | h2. |  e4 e e | e d4. g8 | c,2.~ | c2. \break
 }
