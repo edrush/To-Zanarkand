@@ -14,8 +14,8 @@
              }
         \set PianoStaff.instrumentName = #"Piano  "
         \new Staff \relative c'' {
-                           \global \pianoupper_intro \transpose c c' {\pianoupper_melody \pianoupper_float \pianoupper_final}
-                       }
+               \global \pianoupper_intro \transpose c c' {\pianoupper_melody \pianoupper_float \pianoupper_final}
+        }
         \new Staff \pianolower
      >> {
 
